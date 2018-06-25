@@ -17,6 +17,12 @@ $options = array(
 	
 $client = new apiSoapClient($apiUrl, $options); 
 
+$productRangeId = 0; // the Product Range you want to add to
+$productName = ''; // your product name
+$sku = ''; // your Stock Keeping Unit
+$description = ''; // your product description
+
+
 $SelectedProductRangeOptionValues = array();
 
 $SelectedProductRangeOptionValues[] = array("BrandID" => $brandId, "OptionID" => 55895, "OptionName" => "Manufacturer", "ID" =>  7185708, "OptionValue" => "O'Neill", 'OptionSortOrder' => 0  );
@@ -28,10 +34,10 @@ $results = $client->AddProduct(array('request'=>array('BrandID' => $brandId,
 														'ID' => 0,
 														'BrandID' => $brandId,
 														'ProductType' => 0,
-														'ProductRangeID' => 4347874,
-														'Name' => 'BAWBAGS TEST',
-														'ManufacturerSKU'  => 'BAWBAGTEST01',
-														'Description' => 'Test bawbag description',
+														'ProductRangeID' => $productRangeId,
+														'Name' => $productName,
+														'ManufacturerSKU'  => $sku,
+														'Description' => $description,
 														'DateAdded' => 2018-06-20,
 														 'BasePrice' => 1.99,
 														'ChannelPrice' => 0,

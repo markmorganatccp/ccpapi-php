@@ -5,7 +5,7 @@ $brandId = $config['brandId'];
 $sHash = $config['hash'];
 $apiUrl = $config['productOptionWSDL'];
 
-$masterOptionId = 55895;
+$masterOptionId = 0;
 
 try
 {
