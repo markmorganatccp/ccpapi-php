@@ -5,7 +5,7 @@ $brandId = $config['brandId'];
 $sHash = $config['hash'];
 $apiUrl = $config['productOptionWSDL'];
 
-$masterOptionId = 0;
+$masterOptionId = 0; // your master Product Option
 
 try
 {

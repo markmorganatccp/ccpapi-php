@@ -5,10 +5,6 @@ $brandId = $config['brandId'];
 $sHash = $config['hash'];
 $apiUrl = $config['productRangeWSDL'];
 
-
-// Api Method to Call
-$func = "getProductRanges";
-
 try
 {
 $options = array(
