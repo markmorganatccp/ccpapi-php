@@ -1,9 +1,4 @@
 <?php
-// do this
-// https://www.codecademy.com/courses/web-beginner-en-ZQQ64/0/1
-// add Examples and Tests for Each Method in each Endpoint
-// create Code Repo here:
-//https://bitbucket.org/product/pricing?tab=host-in-the-cloud
 
 class Utils{
 
@@ -58,7 +53,7 @@ $funcs = $client->__getFunctions();
 echo '<pre>';
 echo '<h2>Functions:</h2>';
 
-//echo '<pre>' . var_export($funcs, true) . '</pre>';
+
 foreach($funcs as $f)
 {
 $f = preg_replace(

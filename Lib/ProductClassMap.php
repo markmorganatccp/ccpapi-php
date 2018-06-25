@@ -52,11 +52,9 @@ class APIProduct {
 	public $ChannelPseudoStockLevel;
 	public $DateAdded;
 	public $Description;
-	//public $EbayListingID;
 	public $EbayVariationID;
 	public $EbayVariations;
 	public $EndOfLine;
-	//public $ExternalProductId;
 	public $HeightMM;
 	public $ID;
 	public $LargeLetterCompatible;
@@ -65,8 +63,6 @@ class APIProduct {
 	public $MatchOptions;
 	public $Name;
     public $PreOrder;
-	//public $ProductRangeID;
-	//public $ProductType;
 	public $ProductVATRate;
 	public $SalesChannelLinks;
 	public $SearchText;
@@ -76,34 +72,12 @@ class APIProduct {
 	public $SupplierProductLinks;
 	public $Thumbs200x200;
 	public $Thumbs75x75;
-	//public $VATRateID;
 	public $WeightGM;
 	public $WidthMM;
 	public $imageB64Strings;
 	public $images;
 	public $packItems;
 
-	
-	/*
-    public $PurchaseOrderMaxStock;
-
-      //  [XmlIgnore]
-        public  $PurchaseOrderAtStockQuantity;
-
-      //  [XmlIgnore]
-        public  $PurchaseOrderStockType;
-
-     //   [XmlIgnore]
-        public  $PurchaseOrderBoxQuantity;
-
-
-    //    [XmlIgnore]
-        public  $ProductStockType;
-
-     //   [XmlIgnore]
-        public  $DispatchIdentifierOptionID;	
-	
-	*/	
 
 }
 
