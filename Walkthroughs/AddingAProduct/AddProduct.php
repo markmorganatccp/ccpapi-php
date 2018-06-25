@@ -21,11 +21,15 @@ $productRangeId = 0; // the Product Range you want to add to
 $productName = ''; // your product name
 $sku = ''; // your Stock Keeping Unit
 $description = ''; // your product description
+$optionId = 0; // your Product Option ID
+$optionName = ''; // your Product Option Name
+$optionValueId = 0; // your Option Value ID
+$optionValueName = ''; // your Option Value Name
 
 
 $SelectedProductRangeOptionValues = array();
 
-$SelectedProductRangeOptionValues[] = array("BrandID" => $brandId, "OptionID" => 55895, "OptionName" => "Manufacturer", "ID" =>  7185708, "OptionValue" => "O'Neill", 'OptionSortOrder' => 0  );
+$SelectedProductRangeOptionValues[] = array("BrandID" => $brandId, "OptionID" => $optionId, "OptionName" => $optionName, "ID" =>  $optionValueId, "OptionValue" => $optionValueName, 'OptionSortOrder' => 0  );
 
 $results = $client->AddProduct(array('request'=>array('BrandID' => $brandId, 
 														'SecurityHash' => $hash, 
