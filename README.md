@@ -64,3 +64,13 @@ For these to run successfully you will need to set the following:
 	- $optionName
 	- $optionValueId
 	- $optionValueName
+	
+	
+	
+### Creating and Dispatching an Order
+
+/Walkthroughs/CreatingAnOrder/index.php outlines the steps, in order, which need to be taken to add create and dispatch an order.
+
+
+	
+	
