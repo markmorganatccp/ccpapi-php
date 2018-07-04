@@ -1,3 +1,5 @@
+<?php include('../../includes/header.php'); ?>
+
 <?php
 
 include('../../Lib/CcpPhp.php');
@@ -51,3 +53,4 @@ catch(Exception $e)
 ?>
 
 
+<?php include('../../includes/footer.php'); ?>

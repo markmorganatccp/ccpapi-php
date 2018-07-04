@@ -5,7 +5,10 @@
 include('../../Lib/CcpPhp.php');
 $brandId = $config['brandId'];
 $sHash = $config['hash'];
-$apiUrl = $config['productRangeWSDL'];
+$apiUrl = $config['orderWSDL'];
+
+
+$orderId = 0; // the order Id you created via SubmitOrder.php
 
 try
 {
@@ -18,7 +21,7 @@ $options = array(
 	
 $client = new SoapClient($apiUrl, $options); 
 	
-$results = $client->getProductRanges(array('request'=>array('BrandID' => $brandId, 'SecurityHash' => $hash, 'Content'=>$brandId)));
+$results = $client->getInvoiceSummaryForOrderID(array('request'=>array('BrandID' => $brandId, 'SecurityHash' => $hash, 'Content'=>$orderId)));
 ?>
 
 <div>

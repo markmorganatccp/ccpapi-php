@@ -9,13 +9,13 @@ $sandboxUrl = 'https://devwcfccpservicesbase.cloudcommercepro.com/';
 
 
 return [
-   'productOptionWSDL' => $localhost  . 'CCPApiProductOptionService.svc?wsdl',
-     'productRangeWSDL' => $localhost  . 'CCPApiProductRangeService.svc?wsdl',
-    'productWSDL' => $localhost  . 'CCPApiProductsService.svc?wsdl',
-     'salesChannelWSDL' => $localhost  . 'CCPApiSalesChannelService.svc?wsdl',
-    'customerWSDL' => $localhost  . 'CCPApiCustomerService.svc?wsdl',
-    'orderWSDL' => $localhost  . 'CCPApiOrderService.svc?wsdl',
-    'paymentWSDL' => $localhost  . 'CCPApiPaymentService.svc?wsdl',
+   'productOptionWSDL' => $sandboxUrl  . 'CCPApiProductOptionService.svc?wsdl',
+     'productRangeWSDL' => $sandboxUrl  . 'CCPApiProductRangeService.svc?wsdl',
+    'productWSDL' => $sandboxUrl  . 'CCPApiProductsService.svc?wsdl',
+     'salesChannelWSDL' => $sandboxUrl  . 'CCPApiSalesChannelService.svc?wsdl',
+    'customerWSDL' => $sandboxUrl  . 'CCPApiCustomerService.svc?wsdl',
+    'orderWSDL' => $sandboxUrl  . 'CCPApiOrderService.svc?wsdl',
+    'paymentWSDL' => $sandboxUrl  . 'CCPApiPaymentService.svc?wsdl',
    'brandId' => $brandId,
     'hash' => $hash
 ];

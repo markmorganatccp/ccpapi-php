@@ -24,7 +24,7 @@ $var->SecurityHash = $sHash;
 $var->Content = new APIOrderCreateOrderRequest;
 
 // (int) Must be a valid CCP Customer ID belonging to your brand
-$var->Content->nCustomerID = 0;
+$var->Content->nCustomerID = 15928318; // created / saved when you ran the AddCustomer.php script
 
 // (int) your Brand ID
 $var->Content->intBrandID = $brandId;
@@ -122,7 +122,7 @@ $item1->OrderID = 0;
 // (string) Optional, barcode for product
 $item1->BarCode = ''; 
 // (string) Optional, stock keeping unit
-$item1->SKU = $sku; 
+$item1->SKU = ""; 
 // (string) Optional, alternative barcodes configured in CCP at {your ccp url}/Admin/Product.aspx?ProdRangeID={0}&ProductID={0}&ChannelID=0
 //$item1->AdditionalBarCodes = '';
 // (int) Unique Identifier in CCP for your Product
@@ -142,7 +142,7 @@ $item1->VatRateID = 5;
 $item1->Quantity = 1;
 
 // (decimal) Price per item
-$item1->Price = 99.50; 
+$item1->Price = 6.24; 
 
 // if set to true then tax will be added at the rate specified
 $item1->UseNetPrice = true;  
@@ -188,11 +188,11 @@ catch(Exception $e)
 ?>
 
 <div <div class="panel panel-default">
-<?php $utils->outPutLastRequest($client); ?>
+<?php $utils->OutPutLastRequest($client); ?>
 </div>
 
 <div <div class="panel panel-default">
-<?php $utils->outPutLastResponse($client); ?>
+<?php $utils->OutPutLastResponse($client); ?>
 </div>
 
 

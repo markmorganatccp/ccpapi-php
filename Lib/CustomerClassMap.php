@@ -59,7 +59,38 @@ class APICustomer {
 		public $LoginID;
 }
 
-    
+
+class RequestObjectOfAPICustomerAddCustomerRequest {
+	public $BrandID;
+	public $SecurityHash;
+	public $APICustomerAddCustomerRequest;
+}
+
+class APICustomerAddCustomerRequest {
+	public $intBrandID;
+	public $SalesChannelID;
+	public $CompanyName;
+	public $TradingName;
+	public $FirstName;
+	public $LastName;
+	public $EmailAddress;
+	public $intCustomerType;
+	public $intPaymentTerms;
+	public $VATNumber;
+	public $Address1;
+	public $Address2;
+	public $Postcode;
+	public $TownCity;
+	public $CountyRegion;
+	public $Country;
+	public $TelNo;
+	public $FaxNo;
+	public $MobNo;
+	public $LoginID;
+	public $AgentID;
+	public $CreditLimit;
+}
+
     
 
 ?>

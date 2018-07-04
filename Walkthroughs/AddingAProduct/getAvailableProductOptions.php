@@ -1,4 +1,4 @@
-
+<?php include('../../includes/header.php'); ?>
 
 <?php
 
@@ -43,3 +43,4 @@ catch(Exception $e)
 ?>
 
 
+<?php include('../../includes/footer.php'); ?>

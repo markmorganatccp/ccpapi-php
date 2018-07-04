@@ -316,5 +316,65 @@ class ccpCustomerOrderItem {
 }
 
 
+class RequestObjectOfAPIDispatchOrderRequest
+{
+public $BrandID; 
+public $SecurityHash; 
+public $Content;
+}
+
+
+class APIDispatchOrderRequest
+{ 
+	public $ccpApiDispatchItems; 
+	public $OrderId; 
+	public $DispatchOptions; 
+	public $DispatchType; 
+	public $ConsignmentReferenceNumber; 
+	public $TrackingNumber; 
+}
+
+
+class ArrayOfCcpApiDispatchItem 
+{ 
+	public $ccpApiDispatchItem; 
+}
+
+class ccpApiDispatchItem 
+{ 
+	public $OrderItemId; 
+	public $QuantityToDispatch; 
+	public $ProductId; 
+
+}
+
+
+class ccpApiDispatchOptions 
+{ 
+	public $UpdateChannel; 
+	public $UpdateCCP; 
+	public $RestrictLabels; 
+	public $MarkAsPicked; 
+	public $AllowPickReset; 
+	public $UseShippingRuleMaxWeight; 
+	public $OverwriteOrderNotes; 
+	public $OverwriteOrderNoteType; 
+	public $OrderNote; 
+	public $CreditNote; 
+	public $Reference; 
+	public $DispatchDate; 
+	public $overrides; 
+	public $Refund; 
+	public $CourierId; 
+	public $CourierServiceRulesId; 
+	public $BCSID; 
+	public $MarkPicksAsDone; 
+	public $PackagingOption; 
+
+}
+
+
+
+
 
 ?>
