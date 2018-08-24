@@ -24,7 +24,9 @@ $var->SecurityHash = $sHash;
 $var->Content = new APIOrderCreateOrderRequest;
 
 // (int) Must be a valid CCP Customer ID belonging to your brand
-$var->Content->nCustomerID = 15928318; // created / saved when you ran the AddCustomer.php script
+$var->Content->nCustomerID = 0; // created / saved when you ran the AddCustomer.php script
+
+$var->Content->SalesChannelID = 0;
 
 // (int) your Brand ID
 $var->Content->intBrandID = $brandId;
@@ -127,7 +129,7 @@ $item1->SKU = "";
 //$item1->AdditionalBarCodes = '';
 // (int) Unique Identifier in CCP for your Product
 //  No Product exists with that ID in CCP
-$item1->ProductID = 0; 
+$item1->ProductID = 3433179; 
 
 // (string) Optional, Name of your Product in CCP
 //$item1->ProductName =  null;
@@ -160,9 +162,9 @@ $item1->RowDiscountGross = 0;
 $item1->DiscountCalculatedInPrice = false;
 
 // (decimal) No longer in use,legacy
-$item1->RowTotalNet = 0 ;
-$item1->RowTotalVAT = 0;
-$item1->RowTotalGross = 0.00;
+$item1->RowTotalNet = 5.00 ;
+$item1->RowTotalVAT = 1.00;
+$item1->RowTotalGross = 6.00;
 
 $items[] = $item1;
 
